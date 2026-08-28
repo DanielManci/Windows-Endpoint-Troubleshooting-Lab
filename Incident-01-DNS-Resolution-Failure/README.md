@@ -14,7 +14,7 @@ Before introducing the fault, I confirmed that the Windows 11 virtual machine ha
  ![Baseline DNS resolution](screenshots/02-baseline-dns-resolution.png)
 - `nslookup google.com` successfully resolved the domain using DNS server `1.1.1.1`, confirming that DNS resolution was functioning correctly before the fault was introduced.
 
-- ## Fault Introduction
+ ## Fault Introduction
 To simulate a realistic DNS-related support issue, I manually changed the Windows 11 DNS configuration from automatic DHCP settings to an invalid DNS server address:
 
 `192.0.2.123`
