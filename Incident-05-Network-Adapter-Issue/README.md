@@ -24,7 +24,7 @@ To reproduce the connectivity issue, I disabled the active network adapter in De
 
 Windows immediately reported that there was no internet connection.
 
-![Network adapter disabled](screenshots/02-network-adapter-disabled.png)
+![Network adapter disabled](screenshots/02-no-internet-after-desable.png)
 
 The disabled-device indicator appeared on the Intel network adapter, while the Windows network status showed that connectivity had been lost.
 
