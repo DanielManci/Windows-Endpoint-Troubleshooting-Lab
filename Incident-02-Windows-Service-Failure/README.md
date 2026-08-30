@@ -41,6 +41,14 @@ The Print Spooler service was confirmed to be stopped using `sc query Spooler`.
 Because the Print Spooler manages print jobs and printer communication in Windows, the stopped service prevented applications from displaying the normal list of available printers.
 
 The root cause was therefore identified as the inactive Print Spooler service.
+
+## Resolution
+
+I returned to the Windows Services console and restarted the Print Spooler service.
+
+I then verified the service state using:
+
+`sc query Spooler`
 ![Print Spooler restored](screenshots/04-spooler-running-restored.png)
 The command output showed `STATE: 4 RUNNING`, confirming that the Print Spooler service had been restored successfully.
 
